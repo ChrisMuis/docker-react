@@ -7,3 +7,9 @@ before_install:
 
 script:
   - docker run -e CI=true chrismuising/docker-react npm run test
+
+deploy:
+  provider: azure_web_apps
+  site: udemy-web.azurewebsites.net
+  on:
+    branch: master
