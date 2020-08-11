@@ -10,6 +10,8 @@ script:
 
 deploy:
   provider: azure_web_apps
+  username: test222user
+  password: Khrist515151
   site: udemy-web.azurewebsites.net
   on:
     branch: master
